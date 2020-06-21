@@ -1,0 +1,17 @@
+type Deal{
+    itemId: ID!
+    title: String
+    url: String
+    endsAt: String
+    currency: String
+    price: String
+    originalPrice: String
+    discountPercentage: String
+    quantity: String
+    shippingCost: String
+    dealUrl: String
+}
+type Query{
+  deals: [Deal!]
+
+}
