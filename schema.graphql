@@ -1,5 +1,5 @@
 type Deal{
-    itemId: ID!
+    itemId: String
     title: String
     url: String
     endsAt: String
@@ -12,6 +12,7 @@ type Deal{
     dealUrl: String
 }
 type Query{
+  deal: Deal
   deals: [Deal!]
 
 }
