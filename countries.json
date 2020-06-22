@@ -1,0 +1,155 @@
+[{
+   "id":"12",
+   "gloalId":"EBAY-AT",
+   "language":"de-AT",
+   "territory":"AT",
+   "name":"eBay Austria"
+},
+{
+   "id":"15",
+   "gloalId":"EBAY-AU",
+   "language":"en-AU",
+   "territory":"AU",
+   "name":"eBay Australia"
+},
+{
+   "id":"193",
+   "gloalId":"EBAY-CH",
+   "language":"de-CH",
+   "territory":"CH",
+   "name":"eBay Switzerland"
+},
+{
+   "id":"77",
+   "gloalId":"EBAY-DE",
+   "language":"en-DE",
+   "territory":"DE",
+   "name":"eBay Germany"
+},
+{
+   "id":"2",
+   "gloalId":"EBAY-ES",
+   "language":"en-CA",
+   "territory":"CA",
+   "name":"eBay Canada (English)"
+},
+{
+   "id":"186",
+   "gloalId":"EBAY-ES",
+   "language":"es-ES",
+   "territory":"ES",
+   "name":"eBay Spain"
+},
+{
+   "id":"71",
+   "gloalId":"EBAY-FR",
+   "language":"fr-FR",
+   "territory":"FR",
+   "name":"eBay France"
+},
+{
+   "id":"23",
+   "gloalId":"EBAY-FRBE",
+   "language":"fr-BE",
+   "territory":"BE",
+   "name":"eBay Belgium (French)"
+},
+{
+   "id":"210",
+   "gloalId":"EBAY-FRCA",
+   "language":"fr-CA",
+   "territory":"CA",
+   "name":"eBay Canada (French)"
+},
+{
+   "id":"3",
+   "gloalId":"EBAY-GB",
+   "language":"en-GB",
+   "territory":"GB",
+   "name":"eBay UK"
+},
+{
+   "id":"201",
+   "gloalId":"EBAY-HK",
+   "language":"zh-Hant",
+   "territory":"HK",
+   "name":"eBay Hong Kong"
+},
+{
+   "id":"205",
+   "gloalId":"EBAY-IE",
+   "language":"en-IE",
+   "territory":"IE",
+   "name":"eBay Ireland"
+},
+{
+   "id":"203",
+   "gloalId":"EBAY-IN",
+   "language":"en-IN",
+   "territory":"IN",
+   "name":"eBay India"
+},
+{
+   "id":"101",
+   "gloalId":"EBAY-IT",
+   "language":"en-IT",
+   "territory":"IT",
+   "name":"eBay Italy"
+},
+{
+   "id":"207",
+   "gloalId":"EBAY-MY",
+   "language":"en-MY",
+   "territory":"MY",
+   "name":"eBay Malaysia"
+},
+{
+   "id":"146",
+   "gloalId":"EBAY-NL",
+   "language":"nl-NL",
+   "territory":"NL",
+   "name":"eBay Netherlands"
+},
+{
+   "id":"123",
+   "gloalId":"EBAY-BE",
+   "language":"nl-BE",
+   "territory":"NL",
+   "name":"eBay Belgium (Dutch)"
+},
+{
+   "id":"211",
+   "gloalId":"EBAY-PH",
+   "language":"en-PH",
+   "territory":"PH",
+   "name":"eBay Philippines"
+},
+{
+   "id":"212",
+   "gloalId":"EBAY-PL",
+   "language":"pl-PL",
+   "territory":"PL",
+   "name":"eBay Poland"
+},
+{
+   "id":"216",
+   "gloalId":"EBAY-SG",
+   "language":"en-SG",
+   "territory":"SG",
+   "name":"eBay Singapore"
+},
+{
+   "id":"0",
+   "gloalId":"EBAY-US",
+   "language":"en-US",
+   "territory":"US",
+   "name":"eBay United States"
+}
+
+
+
+
+
+
+
+]

@@ -1,4 +1,5 @@
 const { RESTDataSource } = require("apollo-datasource-rest");
+const countryList  = require("./countries");
 var parser = require('xml2js').Parser({explicitArray:false});
 class EbayAPI extends RESTDataSource{
     constructor(){
@@ -30,6 +31,9 @@ class EbayAPI extends RESTDataSource{
     async deals(){
         return this.rawDeals( await this.get("ebay-ca?limit=200"))
     }
-   
+  async countries(){
+      console.log(countryList)
+       return countryList;
+   }
 }
 module.exports = {EbayAPI}

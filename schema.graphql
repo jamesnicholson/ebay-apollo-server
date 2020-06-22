@@ -11,8 +11,15 @@ type Deal{
     shippingCost: String
     dealUrl: String
 }
+type Country{
+  id: String
+  gloalId:String
+  language: String
+  territory: String
+  name: String
+}
 type Query{
   deal: Deal
   deals: [Deal!]
-
+  countries: [Country!]
 }
