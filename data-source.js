@@ -5,10 +5,7 @@ class EbayAPI extends RESTDataSource{
         super();
         this.baseURL = "https://www.ebay.com/rps/feed/v1.1/"
     }
-
-
     rawDeals(data){
-
       const deal = (data) => {
             return{
                 itemId: data.itemId,
@@ -24,12 +21,11 @@ class EbayAPI extends RESTDataSource{
                 dealUrl: data.dealUrl
             }
         }
-        
+        let cleaned = [];
         parser.parseString(data, function (err, result) {
-            const cleaned = Array.isArray(result.eBayDealsAndEventsItems.item) ? result.eBayDealsAndEventsItems.item.map((item) => deal(item)) : []
-            return cleaned
+            cleaned = Array.isArray(result.eBayDealsAndEventsItems.item) ? result.eBayDealsAndEventsItems.item.map((item) => deal(item)) : []
         });
-        
+        return cleaned
     }
     async deals(){
         return this.rawDeals( await this.get("ebay-ca?limit=200"))
