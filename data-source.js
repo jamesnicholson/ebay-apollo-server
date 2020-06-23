@@ -28,12 +28,12 @@ class EbayAPI extends RESTDataSource{
         });
         return cleaned
     }
-    async deals(){
-        return this.rawDeals( await this.get("ebay-ca?limit=200"))
+
+    async deals(countries, limit){
+        return this.rawDeals( await this.get(`${countries}?limit=${limit}`))
     }
-  async countries(){
-      console.log(countryList)
-       return countryList;
-   }
+    async countries(){
+        return countryList;
+    }
 }
 module.exports = {EbayAPI}

@@ -20,6 +20,6 @@ type Country{
 }
 type Query{
   deal: Deal
-  deals: [Deal!]
   countries: [Country!]
+  deals(countries: String, limit: Int): [Deal!]
 }
