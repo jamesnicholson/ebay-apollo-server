@@ -1,15 +1,15 @@
 type Deal{
-    itemId: String
-    title: String
-    url: String
-    endsAt: String
-    currency: String
-    price: String
-    originalPrice: String
-    discountPercentage: String
-    quantity: String
-    shippingCost: String
-    dealUrl: String
+  itemId: String
+  title: String
+  url: String
+  endsAt: String
+  currency: String
+  price: String
+  originalPrice: String
+  discountPercentage: String
+  quantity: String
+  shippingCost: String
+  dealUrl: String
 }
 type Country{
   id: String
@@ -22,4 +22,5 @@ type Query{
   deal: Deal
   countries: [Country!]
   deals(countries: String, limit: Int): [Deal!]
+  dealsByCategory(category:String, countries: String, limit: Int): [Deal!]
 }

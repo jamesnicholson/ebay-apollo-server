@@ -28,7 +28,9 @@ class EbayAPI extends RESTDataSource{
         });
         return cleaned
     }
-
+    async dealsByCategory(category, countries, limit){
+        return this.rawDeals( await this.get(`${countries}?eBayCatId=${category}&limit=${limit}`))
+    }
     async deals(countries, limit){
         return this.rawDeals( await this.get(`${countries}?limit=${limit}`))
     }
