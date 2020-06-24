@@ -18,9 +18,14 @@ type Country{
   territory: String
   name: String
 }
+type Category{
+  id:String
+  name:String
+}
 type Query{
   deal: Deal
   countries: [Country!]
+  categories: [Category!]
   deals(countries: String, limit: Int): [Deal!]
   dealsByCategory(category:String, countries: String, limit: Int): [Deal!]
 }

@@ -5,6 +5,9 @@ const Query = {
     countries: async(_source, { }, { dataSources }) => {
       return await dataSources.EbayAPI.countries()
     },
+    categories: async(_source,{},{dataSources}) => {
+      return await dataSources.EbayAPI.categories()
+    },
     dealsByCategory: async(_source, {category, countries, limit}, { dataSources }) => {
       return await dataSources.EbayAPI.dealsByCategory(category, countries, limit)
     }
