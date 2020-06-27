@@ -8,7 +8,7 @@ Demo: http://159.203.110.164:9002/graphql
   - Ebay Apollo Server has been dockerized
 
 ```sh
-    $ docker run -p 9001:9000 jam3snicholson/ebay-apollo-server
+    $ docker run -p 9002:9002 jam3snicholson/ebay-apollo-server
 ```
 
 ### GraphQL query
