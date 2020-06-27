@@ -18,20 +18,20 @@ Fetch a group of deals via country with a limit.
 ```sh
 {
     deals(countries : "EBAY-AU", limit:2) {
-    		itemId,
-    		title,
-				price,
+    	itemId,
+    	title,
+			price,
     }
 }
 ```
  Fetch a group of deals by category with a limit
  ```sh
 {
-    dealsByCategory(category:"260010" countries : "EBAY-AU", limit:3) {
-    		itemId,
-    		title,
-				price,
-    }
+  dealsByCategory(category:"260010" countries : "EBAY-AU", limit:3) {
+    itemId,
+    title,
+    price,
+  }
 }
 ```
 A list of categories
