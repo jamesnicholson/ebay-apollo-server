@@ -1,6 +1,6 @@
 const Query = {
-    deals: async(_source, {countries, limit}, { dataSources }) => {
-      return await dataSources.EbayAPI.deals(countries, limit)
+    deals: async(_source, {country, limit}, { dataSources }) => {
+      return await dataSources.EbayAPI.deals(country, limit)
     },
     countries: async(_source, { }, { dataSources }) => {
       return await dataSources.EbayAPI.countries()
@@ -8,8 +8,8 @@ const Query = {
     categories: async(_source,{},{dataSources}) => {
       return await dataSources.EbayAPI.categories()
     },
-    dealsByCategory: async(_source, {category, countries, limit}, { dataSources }) => {
-      return await dataSources.EbayAPI.dealsByCategory(category, countries, limit)
+    dealsByCategory: async(_source, {category, country, limit}, { dataSources }) => {
+      return await dataSources.EbayAPI.dealsByCategory(category, country, limit)
     }
   }
 module.exports = {Query}

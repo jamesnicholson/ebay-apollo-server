@@ -26,6 +26,6 @@ type Query{
   deal: Deal
   countries: [Country!]
   categories: [Category!]
-  deals(countries: String, limit: Int): [Deal!]
-  dealsByCategory(category:String, countries: String, limit: Int): [Deal!]
+  deals(country: String, limit: Int): [Deal!]
+  dealsByCategory(category:String, country: String, limit: Int): [Deal!]
 }
