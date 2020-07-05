@@ -7,7 +7,7 @@ const expressJwt = require('express-jwt');
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 const {ApolloServer, gql} = require('apollo-server-express')
-const port = 9000;
+const port = 9002;
 const jwtSecret = Buffer.from('Zn8Q5tyZ/G1MHltc4F/gTkVJMlrbKiZt', 'base64');
 const app = express();
 
