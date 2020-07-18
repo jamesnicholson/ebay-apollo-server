@@ -15,15 +15,6 @@ app.use(cors(), bodyParser.json(), expressJwt({
   secret: jwtSecret,
   credentialsRequired: false
 }));
-
-app.get('/', (req, res) => {
-  res.send("Hello wolrd");
-})
-
-app.get('/test', (req, res) => {
-  res.send("Hello James this is a test");
-})
-
 const typeDefs = gql(fs.readFileSync('./schema.graphql', {encoding:'utf8'}))
 const resolvers = require('./resolvers')
 const context = ({req}) => ({user: req.user && null})

@@ -15,6 +15,7 @@ class EbayAPI extends RESTDataSource{
                 url: data.url,
                 endsAt: data.endsAt,
                 currency: data.currency,
+                image225: data.image225,
                 price: data.price,
                 originalPrice: data.originalPrice,
                 discountPercentage: data.discountPercentage,
