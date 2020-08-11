@@ -1,6 +1,6 @@
 const { RESTDataSource } = require("apollo-datasource-rest");
-const countryList  = require("./countries");
-const categoryList  = require("./categories");
+const countryList = require("./countries");
+const categoryList = require("./categories");
 var parser = require('xml2js').Parser({explicitArray:false});
 class EbayAPI extends RESTDataSource{
     constructor(){
@@ -30,11 +30,17 @@ class EbayAPI extends RESTDataSource{
         });
         return cleaned
     }
-    async dealsByCategory(category, countries, limit){
-        return this.rawDeals( await this.get(`${countries}?eBayCatId=${category}&limit=${limit}`))
+    async dealsByCategory(category, country, limit){
+        return this.rawDeals( await this.get(`${country}?eBayCatId=${category}&limit=${limit}`))
     }
-    async deals(countries, limit){
-        return this.rawDeals( await this.get(`${countries}?limit=${limit}`))
+    async dealsByCategoryByOffset(country, category, limit, offset){
+        return this.rawDeals( await this.get(`${country}?eBayCatId=${category}&limit=${limit}&offset=${offset}`))
+    }
+    async deals(country, limit){
+        return this.rawDeals( await this.get(`${country}?limit=${limit}`))
+    }
+    async dealsByOffset(country, limit, offset){
+        return this.rawDeals( await this.get(`${country}?limit=${limit}&offset=${offset}`))
     }
     async countries(){
         return countryList;
