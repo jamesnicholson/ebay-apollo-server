@@ -24,11 +24,7 @@ type Category{
   name:String
 }
 type Query{
-  deal: Deal
   countries: [Country!]
   categories: [Category!]
-  deals(country: String, limit: Int): [Deal!]
-  dealsByCategory(country: String, category: String, limit: Int): [Deal!]
-  dealsByOffset(country:String, limit: Int, offset: Int): [Deal!]
-  dealsByCategoryByOffset(country: String, category: String,  limit: Int, offset: Int): [Deal!]
+  deals(country: String, category: String,  limit: Int, offset: Int): [Deal!]
 }
