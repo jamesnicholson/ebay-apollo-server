@@ -17,10 +17,10 @@ Fetch a group of deals via country and category with a limit.
 ```sh
   query deals($country: String!, $category: String, $limit: Int, $offset: Int) {
     deals(country: $country, category:$category, limit:$limit, offset: $offset) {
-    		itemId,
-    		title,
-				price
-      	image225
+      itemId,
+      title,
+      price,
+      image225
     }
   }
 
@@ -35,10 +35,10 @@ Fetch a group of deals via country and category with a limit.
  ```sh
    query deals($country: String!, $limit: Int, $offset: Int) {
     deals(country: $country, limit:$limit, offset: $offset) {
-    		itemId,
-    		title,
-				price
-      	image225
+        itemId,
+        title,
+        price,
+        image225
     }
   }
 
