@@ -13,51 +13,42 @@ Demo: http://159.203.110.164:9002/graphql
 
 ### GraphQL query
 
-Fetch a group of deals via country with a limit.
-
+Fetch a group of deals via country and category with a limit.
 ```sh
-{
-    deals(countries : "EBAY-AU", limit:2) {
-    	itemId,
-    	title,
-			price,
+  query deals($country: String!, $category: String, $limit: Int, $offset: Int) {
+    deals(country: $country, category:$category, limit:$limit, offset: $offset) {
+    		itemId,
+    		title,
+				price
+      	image225
     }
-}
-```
- Fetch a group of deals by category with a limit
- ```sh
-{
-  dealsByCategory(category:"260010" countries : "EBAY-AU", limit:3) {
-    itemId,
-    title,
-    price,
   }
-}
+
+  {
+    "country" : "EBAY-AU",
+    "category": "260010",
+    "limit": 2,
+    "offset": 0
+  }
 ```
-Fetch a group of deals  with a limit and a offset for 1, this will be used for pagination 
+  Fetch a group of deals via country  with a limit.
  ```sh
-{
-    dealsByOffset( countries : "EBAY-AU", limit:3, offset: 1) {
+   query deals($country: String!, $limit: Int, $offset: Int) {
+    deals(country: $country, limit:$limit, offset: $offset) {
     		itemId,
     		title,
 				price
       	image225
     }
-}
+  }
+
+  {
+    "country" : "EBAY-AU",
+    "limit": 2,
+    "offset": 0
+  }
 ```
 
-
-Fetch a group of deals by category with a limit and a offset for 1, this will be used for pagination 
- ```sh
-{
-    dealsByCategoryByOffset( countries : "EBAY-AU", category:"260010" , limit: 3, offset: 1 {
-    		itemId,
-    		title,
-				price
-      	image225
-    }
-}
-```
 
 A list of categories
  ```sh
